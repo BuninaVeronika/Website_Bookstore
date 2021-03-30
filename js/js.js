@@ -1,0 +1,234 @@
+/*Регистрация*/
+$("#rotpr").on("click",function(){
+    $.post("phpjob/registracia.php",
+    {
+        familia:$("#familia").prop("value"),
+        ima:$("#ima").prop("value"),
+        mmail:$("#mmail").prop("value"),
+        login:$("#login").prop("value"),
+        password:$("#password").prop("value"),
+        ppassword:$("#ppassword").prop("value"),
+        telefon:$("#telefon").prop("value"),
+        rdata:$("#rdata").prop("value")
+    },
+   function(html){
+   if(html=="Вы успешно зарегистрированы!"){
+       window.location.href="kabinet.php";
+   }
+   else{
+     $(".otvet").html(html);
+ }});
+});
+$("#redac").on("click",function(){
+    $.post("phpjob/redac.php",
+    {
+        familia:$("#familia").prop("value"),
+        ima:$("#ima").prop("value"),
+        mmail:$("#mmail").prop("value"),
+        login:$("#login").prop("value"),
+        password:$("#password").prop("value"),
+        ppassword:$("#ppassword").prop("value"),
+        telefon:$("#telefon").prop("value"),
+        rdata:$("#rdata").prop("value"),
+        o:$("#o").prop("value"),
+        ad:$("#ad").prop("value"),
+        do:$("#do").prop("value"),
+        r:$("#r").prop("value"),
+        e:$("#e").prop("value"),
+        pindex:$("#pindex").prop("value")
+    },
+   function(html){
+     $(".otvet").html(html);
+ });
+});
+$("#smena").on("click",function(){
+    $.post("phpjob/smenapass.php",
+    {
+        password:$("#password").prop("value"),
+        ppassword:$("#ppassword").prop("value")
+    },
+   function(html){
+     $(".otvet").html(html);
+ });
+});
+$("#totpr").on("click",function(){
+    $.post("phpjob/message.php",
+    {
+        tema:$("#tema").prop("value"),
+        messagemail:$("#messagemail").prop("value"),
+        textmail:$("#textmail").prop("value")
+    },
+   function(html){
+     $(".message").html(html);
+    });
+    document.forms['message'].reset();
+});
+$("#aotpr").on("click",function(){
+    $.post("phpjob/avtorizacia.php",
+    {
+        login:$("#alogin").prop("value"),
+        password:$("#apassword").prop("value")
+    },
+   function(html){
+   if(html=="Вы авторизованны!"){
+        $(".ablock").css({
+        display:"none"
+    }); 
+   }
+   else{
+     $(".tuta").html(html);
+ }});
+ document.forms['avt'].reset();
+});
+$("#vuiti").on("click",function(){
+    $.post("phpjob/vuhod.php",
+    {
+    },
+   function(html){
+   if(html=="Вы вышли с сайта"){
+       window.location.href="index.php";
+   }
+   else{
+     $(".otvet").html(html);
+ }});
+});
+$("#ydld").on("click",function(){
+    $.post("phpjob/ydld.php",
+    {
+    },
+   function(html){
+   if(html=="удалили"){
+       window.location.href="index.php";
+   }
+   else{
+     $(".otvet").html(html);
+ }});
+});
+
+/*всплывающие окно сообщения*/
+$("#mail").on("click",function(){
+    $(".mblock").css({
+        display:"block"
+    }); 
+ });
+$(".otmena").on("click",function(){
+    $(".mblock").css({
+        display:"none"
+    }); 
+    $(".ablock").css({
+        display:"none"
+    });
+     $(".kblock").css({
+        display:"none"
+    });
+});
+/*всплывающи оно авторизации*/
+$("#reg").on("click",function(){
+    $(".ablock").css({
+        display:"block"
+    }); 
+ });
+$("#kontaktu").on("click",function(){
+    $(".kblock").css({
+        display:"block"
+    }); 
+ });
+$(".pokupka").on("click",function(){
+    $.post("phpjob/corzina.php",
+    {
+        name:$(this).attr("but")
+    },
+    function(html) {
+    $(".tochet").html(html);
+    });
+});
+$(".ydalenie").on("click",function(){
+    $.post("phpjob/ydcorsin.php",
+    {
+        id:$(this).attr("ydal")
+    },
+   function(html){
+   if(html=="удалили"){
+       window.location.href="korzina.php";
+   }
+ });
+ });
+$(".cenka").on("click",function(){
+    $.post("phpjob/ocenka.php",
+    {
+        ocenka:$(this).attr("value"),
+        id:$(this).attr("but")
+    },function(html) {
+    $(".vetu").html(html);
+    });
+});
+$("#comm").on("click",function(){
+    $.post("phpjob/comm.php",
+    {   
+        commentar:$("#commentar").prop("value"),
+        id:$(this).attr("but")
+    },
+   function(html){
+   if(html==="Спасибо за отзыв!"){
+       $(".vet").html(html); 
+       document.forms['comm'].reset();
+   }
+   else{
+      $(".vet").html(html); 
+   }
+ });
+ });
+$("#kaz").on("click",function(){
+    window.location.href="korzina.php";
+ });
+ 
+$("#zakazati").on("click",function(){
+    $.post("phpjob/zakazat.php",
+    {
+        id:$("#id").prop("value"),
+        col:$("#col").prop("value"),
+        fam:$("#fam").prop("value"),
+        i:$("#i").prop("value"),
+        o:$("#o").prop("value"),
+        ad:$("#ad").prop("value"),
+        do:$("#do").prop("value"),
+        r:$("#r").prop("value"),
+        e:$("#e").prop("value"),
+        pindex:$("#pindex").prop("value")
+    },
+      function(data){
+   if(data=="Удачно"){
+       window.location.href="korzina.php";
+   }
+   else{
+     $("#status").html(data);
+ }});
+});
+$(".otmenazakaz").on("click",function(){
+    $.post("phpjob/otmenzakaz.php",
+    {
+        idzak:$(this).attr("skr")
+    },
+   function(data){
+   if(data==="удалили"){
+       window.location.href="korzina.php";
+   }
+   else{
+       alert(data);
+   }
+ });
+ });
+$(".gora").on("click",function(){
+    $.post("admin/ypravleniazakaz.php",
+    {
+        gora:$(this).attr("gora")
+    },
+   function(data) {
+       if(data==="Завершено"){
+       window.location.href="korzina.php";
+   }
+   else{
+       alert(data);
+   }      
+      });
+     });

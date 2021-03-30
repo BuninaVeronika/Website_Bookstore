@@ -1,0 +1,872 @@
+.lavd{
+    width: 95%;
+    margin: 0 auto;
+}
+.lavd .pokupka{
+    clear: left;
+}
+.karta{
+    float: right;
+    width: 45%;
+    
+}
+#boss{
+    position: absolute;
+    right: 50%;
+    bottom: 0;
+    font-size: 25px;
+    color:white;
+}
+.specification .admin{
+    position: fixed;
+    right: 0;
+    top:5%;
+    width: 290px;
+    border:1px #311407 solid;
+    background: rgba(255,255,255,0.8);
+    padding: 1%;
+    margin: 1px 0;
+}
+.zakr{
+    position: fixed;
+    right: 0;
+    bottom: 25%;
+    width: 290px;
+    height: 150px;
+    border:1px #311407 solid;
+    background: rgba(255,255,255,0.8);
+    padding: 1%;
+    margin: 1px 0;
+    line-height: 45px;
+    font-size: 20px;
+}
+.zakr p:hover{
+    font-size: 20px;
+}
+.obadmin{
+    width: 70%;
+}
+.specification .admin p{
+    line-height: 45px;
+}
+.specification .admin p:hover{
+    font-size: 20px;
+}
+
+.red{
+    width: 35px;
+}
+.redactir{
+    width: 400px;
+    height: 400px;
+    background: none;
+    border: none;
+}
+.textarea{
+    width: 300px;
+    height: 300px;
+}
+.otsuv{
+    width: 100%;
+}
+#status{
+    color:blue;
+}
+.dob{
+    width: 250px;
+}
+.mail{
+    background: white;
+    padding: 1%;
+    padding-bottom: 5%;
+    margin: 4px;
+    float:left;
+    border: 1px solid black;
+}
+#history{
+    width: 250px;
+    height: 200px;
+}
+.otvet{
+    color:blue;
+    margin: 10px;
+}
+.dobvet{
+    color:blue;
+    margin: 15px;
+    width: 100%;
+}
+.tuta{
+    width: 200px;
+    color:blue;
+}
+.message{
+    width: 200px;
+    color:blue;
+
+}
+.ocenka{
+    float:left;
+}
+hr{
+ color: rgba(255,255,255,0.6);
+
+}
+/*Оформлни загоовков второго порядка*/
+h2,h1{
+   font-family: had;
+   text-align: center;
+   clear: left;
+}
+h3{
+    font-family: had;
+    font-size:1em;
+    margin: 3px 0;
+}
+h4{
+    font-size: 20px;
+    margin:18px;
+    color:#311407;
+    margin-left: 0;
+}
+/*Общее текстовое оформлние*/
+p{
+    font-size: 16px;
+    padding: 0;
+    margin:0;
+}
+.glavnews{
+    width: 90%;
+    min-height:45%;
+    margin: 10% 0 30% 0;
+}
+.glavnews img{
+    z-index: 4;
+    position: absolute;
+    top: 5%;
+    right:2%;
+    float:right;
+    width: 55%;
+    border: none;
+}
+.glavnews h2{
+    position: relative;
+    z-index: 5;
+    font-size:1.5em;
+    max-width: 50%;
+    text-align:center;
+    margin: 5%;
+}
+.glavnews span{
+    z-index: 6;
+    float:left;
+    margin: 5%;
+    max-width: 40%;
+    min-height: 20%;
+}
+/*Блок для регистрации*/
+.registr{
+    height: 30px;
+    width: 200px;
+    font-size: 15px;
+    font-family: Calibri;
+}
+/*Строка прехода к ргистрации*/
+#areg{
+    color: blue;
+    float: right;
+    font-size: 16px;
+}
+/*Для кнопок*/
+.butt{
+    margin: 2px;
+    padding: 8px;
+}
+#ydld{
+    margin: 0 30%;
+}
+#vuiti{
+    float:right;
+}
+/*Ширина ячеек*/
+td { 
+    padding: 7px; 
+}
+/*Блок для ввода сообщения*/
+#textmail{
+    height: 150px;
+    width: 200px;
+    font-size: 15px;
+    font-family: Calibri;
+}
+/*Всплывающие окно сообщения*/
+.mblock{
+   z-index: 10;
+   position: absolute;
+   left: 18%;
+   bottom:0;
+   display: none;
+   background-color: rgba(203,203,203,1);
+   margin:3%;
+   padding: 15px;
+   box-shadow: 1px 2px 15px gray;
+}
+/*Всплывающи окно с контактами*/
+.kblock{
+   z-index: 10;
+   position: absolute;
+   left: 18%;
+   bottom: 0%;
+   display: none;
+   max-height: 70%;
+   min-width: 250px;
+   max-width: 50%;
+   background-color: rgba(203,203,203,0.9);
+   margin:3%;
+   padding: 10px;
+   box-shadow: 1px 2px 15px gray;
+}
+.kblock h3{
+    width: 88%;
+    margin: 15px 0;
+    font-size: 15px;
+}
+.kblock p{
+    clear: left;
+}
+/*Всплывающи окно с авторизацией*/
+.ablock{
+   z-index: 10;
+   position: absolute;
+   left: 0;
+   bottom: 15%;
+   display: none;
+   max-height: 70%;
+   max-width: 50%;
+   background-color: rgba(203,203,203,0.9);
+   margin:3%;
+   padding: 15px;
+   box-shadow: 1px 2px 15px gray;
+}
+/*Кнопка отмены*/
+.otmena{
+    height: 15px;
+    width: 15px;
+    float:right;
+    color:black;
+    font-size:30px;
+    cursor: pointer;
+    margin: 1px;
+    
+}
+/*Оформлние кнопок*/
+input[type="button"]{
+    height: 35px;
+    box-shadow: 1px 1px 5px gray;
+    border: 1px solid black;
+    float:left;
+    margin: 4px;
+}
+.pokupka{
+    width: 40px;
+    height: 40px;
+    margin: 20px;
+    margin-left: 0;
+    padding: 5px;
+    background: none;
+    background-image: url("../img/sail.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left;
+    border: 1px solid gray;
+    box-shadow: 1px 2px 5px gray;
+}
+input[type="button"]:active{
+    box-shadow: 1px 1px 8px gray inset;
+}
+input[type="radio"]{
+    margin:0;
+    display: none;
+    }
+    .cenka + label{
+        cursor: pointer;
+    }
+    .cenka + label:hover{
+        color:blue;
+    }
+    .cenka + label:active{
+        color:red;
+    }
+/*Оформление товара*/
+.lav{
+    width: 95%;
+    margin: 0 auto;
+    
+}
+.lav .opisanie{
+    float: left;
+    clear: left;
+}
+.lav .tovar .pokupka{
+    clear: left;
+}
+.venu{
+    float:left;
+}
+.tovar{
+    max-width: 400px;
+    min-height: 340px;
+    float:left;
+    padding: 1%;
+    margin: 12px;
+    background-color:rgba(255,255,255,0.7);
+}
+.tovar p{
+    padding: 1%;
+    background-color: rgba(255,255,255,0.6);
+    max-width: 40%;
+    font-family: Calibri;
+    font-style: italic;
+    float:left;
+    word-spacing: 10px;
+}
+.tovar .specification span{
+    width: 90%;
+     float:left;
+     clear: left;
+     text-align: left;
+}
+.tovar h2,h3,h4{
+    text-align: left;
+    float:left;
+    clear: left;
+    margin: 6px 0;
+}
+.tovar img{
+    margin: 12px;
+    width: 25%;
+    border: 12px outset #311407;
+    box-shadow: 1px 2px 8px black;
+}
+.cover{
+    float: left;
+}
+.specification{
+   max-width:190px;
+   font-size: 16px;
+   text-align: left;
+   margin: 10px;
+   float:left;
+}
+.circle{
+    border-radius: 100%;
+    background-color: rgb(203,203,203);
+    float:left;
+    padding: 5px;
+    font-size: 15px;
+}
+.sail{
+   height: 20px;
+   width: 20px;
+   float:right;
+   border-radius: 50%;
+   padding: 9px;
+   border: 1px solid gray;
+   background-image: url("../img/sail.png");
+   background-repeat: no-repeat;
+   background-size: contain; 
+   box-shadow: 1px 2px 5px gray;
+}
+.sail:active{
+    box-shadow: 1px 2px 5px gray inset;
+}
+.vnis{
+    position: absolute;
+    bottom: 5%;
+    right: 50%;
+    background-color: grey;
+    border-radius: 100%;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    color:white;
+}
+.heart{
+   height: 20px;
+   width: 20px;
+   float:left;
+   border-radius: 50%;
+   padding: 9px;
+   border: 1px solid rgb(203,203,203);
+   background-image: url("../img/heart.png");
+   background-repeat: no-repeat;
+   background-size: cover; 
+   box-shadow: 1px 2px 5px black ;
+}
+.heart:active{
+    box-shadow: 1px 2px 5px black inset;
+}
+.slucknig{
+    padding: 1%;
+    width: 100%;
+    min-height: 55%;
+    background: rgba(255,255,255,0.6);
+}
+.slucknig h3{
+    clear: left;
+     float:left;
+}
+.slucknig span{
+    clear: left;
+    float:left;
+}
+.slucknig img{
+    float: left;
+    margin: 5px;
+    min-width: 150px;
+    width: 16%;
+    border: 12px outset #311407;
+    box-shadow: 1px 2px 8px black;
+}
+.slucknig .pokupka{
+    clear: left;
+}
+.opisanie{
+    font-style: italic;
+    margin: 15px;
+    text-align: left;
+    line-height: 25px;
+} 
+.news .tovar{
+    width: 17%;
+    min-height: 400px;
+    text-align: center;
+}
+.news .tovar img{
+    width: 70%;
+    margin: 10% 15%;
+}
+.tovar h2{
+    font-size: 16px;
+    margin: 0px;
+}
+.tovar h3{
+    float: left;
+    margin: 7px 0;
+}
+.news .block h2{
+    float:left;
+    font-size: 19px;
+    margin: 0px;
+}
+/**/.zakaz{
+    display:none;
+}
+.block{
+    width: 23%;
+    margin: 15px 3%;
+    padding: 0 25px 25px 5px;
+    background: rgba(255,255,255,0.8);
+}
+.block li{
+    margin: 9px;
+    font-size: 1em;
+    list-style-type: none;
+    cursor: pointer;
+}
+.block h2{
+    font-size: 25px;
+}
+.block h3{
+    float: left;
+    margin: 7px 0;
+}
+.vubor{
+    position: fixed;
+    top: 5%;
+    right: 0%;
+    height: 90%;
+    width: 50%;
+    overflow-y: scroll;
+}
+.vubor .tovar{
+    min-width: 440px;
+}
+.vubor .tovar .specification{
+     float:left;
+   
+}
+
+.vubor .tovar .pokupka{
+    float:left;
+    clear:left; 
+}
+.tovar .pokupka{
+    float:left; 
+}
+.tovar .avtor .cover{
+   width: 30%;
+}
+
+.center .news h2{
+    text-align: center;
+
+}
+.news{
+    width: 90%;
+    margin: 0 10%;
+    float: left;
+    text-align: center;
+}
+.news .tovar img{
+    width: 70%;
+}
+.news .tovar{
+    min-width: 160px;
+    min-height: 500px;
+}
+.news .tovar  .specification span h4{
+    font-size: 18px;
+    width: 50%;
+    float: left;
+}
+.news .tovar h3{
+    font-size: 18px;
+    width: 100%;
+    text-align: center;
+}
+.reg{
+    width: 40%;
+    float:left;
+    padding: 4%;
+    margin: 1%;
+    background: rgba(255,255,255,0.8);
+}
+.akcii{
+    width:190px;
+    margin:-40px  2.5% 0 2.5%;
+    float:left;
+}
+.akcii img{
+    width: 80%;
+    border: 12px outset #311407;
+    box-shadow: 1px 2px 8px black;
+}
+.news .akcii .pokupka{
+    float:right;
+    margin: 25px -5px;
+}
+.news .tovar .pokupka{
+    float:right;
+    margin: 20% 1% 0 1%;
+}
+.news .akcii h4{
+    text-decoration: line-through;
+    margin: 1px;
+}
+.news .akcii .specification{
+    width: 50%;
+}
+.news .tovar .specification{
+    width: 40%;
+
+   
+}
+.akc{
+    position: relative;
+    z-index: 9;
+    right: -20px;
+    top:270px;
+    height:90px;
+    width: 90px;
+    float:right;
+    text-align: center;
+    background-image: url("../img/akcii.png");
+    background-repeat: no-repeat;
+    background-size: contain; 
+    color: #311407;
+}
+.zina .tovar{
+    width: 220px;
+    min-height: 410px;
+    float:left;
+    padding: 5px;
+}
+.zina .tovar .avtor h3{
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+}
+.zina .tovar .avtor h4{
+    width: 100%;
+    text-align: center;
+    font-size: 19px;
+}
+
+.zina .tovar .cover{
+    width: 45%;
+}
+.kkorsin{
+    width: 40%;
+    margin: 5px 30%;
+}
+.books img{
+    margin: 15px;
+    width: 80%;
+    min-width: 150px;
+    float:left;
+    clear:left;
+    border: 12px outset #311407;
+    box-shadow: 1px 2px 8px black;
+}
+.books p{
+    margin: 5px 0;
+    clear: left;
+    float: left;
+    font-size: 18px;
+    
+}
+.books h3,h4{
+    float: left;
+    clear: left;
+    margin: 5px 0;
+    font-size: 22px;
+}
+.books .ocenka{
+    float:left;
+    width: 20%;
+    clear:left;
+    padding: 0 25px;
+}
+.books .specification{
+    float:left;
+    background: rgba(255,255,255,0.6);
+    padding: 15px;
+    max-width: 250px;
+}
+.books .opisanie{
+    width: 40%;
+    float: right;
+    padding: 0 15px;
+    font-style: italic;
+    text-align: left;
+    line-height: 25px;
+}
+.books .circle{
+    float:right;
+}
+.books .pokupka{
+    float:left;
+    clear: left;
+    margin: 2px 10px;
+}
+#zakaz{
+   float:left;
+   margin: 2px 10px;
+}
+.books .pokupai{
+    float: left;
+    background: rgba(255,255,255,0.9);
+    border: 1px solid #311407;
+    border-radius: 50%;
+    padding: 40px;
+    min-height: 150px;
+    min-width:150px;
+    text-align: center;
+    margin: -35px 0 0 0;
+}
+.books .pokupai h4{
+    font-size: 23px;
+}
+
+.zagolovok{
+    float:left;
+    padding: 5px;
+    width: 60%;
+}
+.zeni{
+    background: none;
+    float:left;
+    padding: 1px;
+}
+.commentarii{
+    width: 93%;
+    min-height: 50px;
+    padding:2% 2% 5% 2% ;
+    margin:2%;
+    background: rgba(255,255,255,0.7);
+    float:left;
+    clear:left;
+    border-radius: 15px;
+}
+.commentarii #comm{
+    float:right;
+}
+.commentarii p{
+    margin: 6px;
+    line-height: 26px;
+}
+#commentar{
+    width: 90%;
+    font-style: italic;
+}
+.kabinet{
+    position: fixed;
+    top: 5%;
+    right: 0%;
+    height: 90%;
+    width: 40%;
+    overflow-y: scroll;
+    float:right;
+    margin: 0 auto;
+}
+.kabinet .tovar{
+    margin: 2% 15%;
+    width: 100%;
+}
+.kabinet .tovar .cover{
+    width: 20%;
+}
+.kva{
+    background: rgba(255,255,255,0.6);
+    float: left;
+    list-style: none;
+    margin: 2%;
+    padding: 2%;
+    min-width: 200px;
+}
+.kva h4{
+    width: 100%;
+    margin: 15px 0;
+    text-align: center;
+}
+.tochet{
+    width: 20px;
+    margin: 0 auto;
+    border-radius: 100%;
+    border: 1px solid gray;
+    float: right;
+    
+}
+.celikom{ 
+    z-index: 6;
+    position: fixed;
+    background: rgba(0,0,0,0.6);
+    top:0;
+    right: 0;
+    left:0;
+    bottom:0;
+}
+.celikom .zakazati .otmena{
+    position: fixed;
+    right:5%;
+    top:5%;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    background-color: white;
+    padding: 10px;
+    text-align: center;
+}
+#zakazati{
+    width: 50%;
+}
+.zakazati{
+    margin:2% auto;
+    width: 88%;
+    height: 85%;
+    background-color: rgba(205,205,205,0.9);
+    padding: 2%;
+    overflow-y: scroll;
+    font-size: 18px;
+}
+.o_knige{
+    background-color: rgba(255,255,255,0.6);
+    width: 350px;
+    height: 100%;
+    float:left;
+    margin:5px;
+    padding: 10px;
+    overflow-y: scroll;
+}
+.o_knige p{
+    float:left;
+    clear: left;
+    margin: 15px 0;
+}
+.o_knige img{
+   margin: 12px;
+    width: 50%;
+    border: 12px outset #311407;
+    box-shadow: 1px 2px 8px black;
+    float: left;
+    clear: left;
+}
+.sot{
+    float:left;
+    width: 200px;
+    margin:0 15px 35px 15px;
+    text-align: center;
+}
+.sot img{
+    margin: 12px;
+    width: 80%;
+    border: 12px outset #311407;
+    box-shadow: 1px 2px 8px black;
+    float: left;
+}
+.kor{
+    float:right;
+    width: 70%;
+}
+.moizakazi{
+    position: fixed;
+    top:0;
+    left:20%;
+    float:left;
+    width: 20%;
+    padding: 2% 0 0 2%;
+    padding-bottom: 4%;
+    height: 92%;
+    background-color: rgba(255,255,255,0.6);
+    overflow-y: scroll;
+    
+}
+.moizakazi .zina .tovar{
+    min-height: auto;
+    max-width: 85%;
+    border:1px solid black;
+}
+.moizakazi .zina .tovar .avtor .cover{
+    margin: 0 20%;
+    
+}
+.moizakazi .zina .tovar .avtor p{
+    max-width: 95%;
+}
+.cartinka{
+    width: 50%;
+    float:right;
+}
+#info{
+    padding: 15px;
+}
+#info span{
+    line-height: 30px;
+}
+.obhzak{
+    position: fixed;
+    bottom: 5%;
+    right: 0%;
+    width: 250px;
+    padding: 5px;
+    background: rgba(205,205,205,0.6)
+}
+.obhzak .zaka{
+    float:right;
+}
+.tab{
+    background: rgba(255,255,255,0.6);
+    margin: 15px;
+    width: 100%;
+}

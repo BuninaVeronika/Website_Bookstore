@@ -1,0 +1,164 @@
+@media(min-width:1600px){
+    .vubor{
+    width: 55%;
+    }
+    .vubor .tovar {
+    min-width: 420px;
+}
+.tovar {
+    margin: 5px 1px;
+}
+.lav{
+    width: 80%;
+    margin: 0 auto;
+}
+.opisanie {
+    float: left;
+    width: 60%;
+}
+.zagolovok {
+    width: 70%;
+}
+}
+@media(max-width:1217px){
+    #bucv{
+        font-size: 10px;
+    }
+}
+@media(max-width:1020px){
+    #bucv{
+        display: none;
+    }
+}
+@media(max-width:920px){
+    #poisk{
+        width: 50%;
+    }
+    .kor{
+    width: 50%;
+}
+}
+@media(max-width:770px){
+.tovar .avtor .cover{
+        width: 20%;
+    }
+  .vubor .tovar{
+    padding: 5px;
+    min-width: 364px;
+    }  
+    .vubor .specification{
+        width: 50%;
+    }
+    .opisanie{
+        float:left;
+    }
+    .specification{
+        margin: 35px;
+    }
+    .slucknig .opisanie{
+        display: none;
+    }
+    .slucknig .specification{
+        width: 100%;
+    }
+    .zagolovok{
+        float:right;
+        width: 50%;
+    }
+    .zeni{
+       float:right;
+    }
+    .books .opisanie{
+        width: 90%;
+        clear: left;
+        float:left;
+    }
+    .reg{
+        width: 90%;
+    }
+    .kabinet{
+        display: none;
+    }
+    .news .tovar{
+        min-width: 238px;
+        min-height: 600px;   
+    }
+    .slucknig{
+        min-height: 35%;
+    }
+    .moizakazi{
+        width: 35%;
+    }
+    
+    
+}
+@media(max-width:460px){
+    #poisk{
+        width: 80%;
+    }
+    #menu li {
+        font-size: 0.9em;
+    }
+    .glavnews span{
+    max-width: 100%;
+}
+    .glavnews h2{
+    font-size: 1em;
+ }
+    .vnis{
+        display: none;
+    }
+    .block{
+        width: 35%;
+    }
+    .vubor{
+      width: 40%;
+    }
+    .vubor .tovar{
+    padding: 5px;
+    min-width: 100px;
+    }   
+    .tovar .avtor .cover{
+   width: 40% ;
+   float: left;
+   clear: left;
+    }
+    .vubor .tovar .specification{
+         float:left;
+         font-size: 13px;
+         margin: 0;
+    }
+    .vubor .tovar .circle{
+        font-size: 8px;
+    }
+    .vubor .tovar h2,h3{
+        max-width: 90%;
+        font-size: 16px;
+    }
+    .vubor .tovar h4{
+        font-size: 15px;
+    }
+    .news .tovar{
+        height: 650px;
+        width: 250px;
+    }
+    .zagolovok{
+        float:right;
+        clear: right;
+        width: 90%;
+        margin:3px; 
+    }
+    .reg{
+        width: 95%;
+    }
+    .kabinet{
+        display: none;
+    }
+    .moizakazi{
+        position: relative;
+        width: 90%;
+        float: left;
+        height: auto;
+    }
+    
+}

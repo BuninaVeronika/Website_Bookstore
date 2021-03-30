@@ -1,0 +1,351 @@
+/*шрифт для заголовков*/
+@font-face{
+    font-family: Pompadur;
+    src: url(1.otf);
+}
+@font-face{
+    font-family: had;
+    src: url(1.otf);
+}
+*{
+    outline: none;
+}
+
+/*Оформлние ссылок*/
+a{
+    text-decoration: none;
+    color:black;
+    cursor: pointer;
+}
+/*Оформление обязательных полей*/
+input:required {
+    border-bottom: 1px solid blue; 
+   }
+input{
+       background: none;
+       border:none;
+       border-bottom: 1px solid black;
+       outline: none;
+       color:black;
+   }
+/*левый блок с меню*/
+#left_block{
+    z-index: 3;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background-image: url("../img/12.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 20%;
+    height: 100%;
+    box-shadow: 1px 2px 8px grey;
+}
+/*Логотип*/
+#logo {
+    z-index: 3;
+    position: absolute;
+    left: 5%;
+    top: 3%;
+    background-image: url("../img/cova5.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 90%;
+    height: 25%;
+}
+#logo:hover{
+    background-image: url("../img/cova5.png");
+}
+/*Меню*/
+#menu{
+    z-index: 3;
+    position: absolute;
+    left: 0px;
+    top: 30%;
+    width: 100%;
+    height: 50%;
+}
+#menu li {
+    font-family: Pompadur;
+    list-style: none;
+    text-decoration: none;
+    width: 100%;
+    height: 15%;
+    font-size: 1.5em;
+    text-align: center;
+    color: black;
+    opacity: 0.7;
+}
+#menu li:hover {
+        opacity: 1;
+}
+/*Регистрация*/
+#reg{
+    z-index: 3;
+    position: absolute;
+    left: 4%;
+    bottom:3%;
+    background-image: url("../img/dveri.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    min-width: 40%;
+    min-height: 13%;
+    text-align: center;
+    cursor: pointer;
+}
+#reg:hover {
+     border-bottom:2px solid black;
+}
+/*Корзина*/
+#corsina{
+    z-index: 3;
+    position: absolute;
+    left: 53%;
+    bottom:3%;
+    background-image: url("../img/corzina.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 40%;
+    height: 13%;
+    text-align: center;
+    cursor: pointer;
+}
+#corsina:hover {
+    border-bottom:2px solid black;
+}
+/*Поиск по сайту*/
+#search{
+    z-index: 3;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    background-color: #fff;
+    opacity: 0.6;
+    width: 80%;
+    height: 5%;
+    box-shadow: 2px 2px 5px grey;
+}
+#search:hover{
+    opacity: 1;
+}
+/*Буквы для сортировки*/
+#bucv :hover{
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+}
+#bucv{
+    z-index: 4;
+    position: absolute;
+    left: 0;
+    top: 20%;
+    text-align: center;
+    width: 65%;
+    height: 26px;
+    font-size:15px;
+}
+#bucv a{
+    margin: 3px;
+    cursor: pointer;
+    
+}
+/*Поиск по сайту*/
+#poisk{
+    z-index: 2;
+    background: none;
+    border:none;
+    border-bottom: 1px solid grey;
+    border-left: 1px solid grey;
+    font-style: italic;
+    font-size:0.8em;
+    position: absolute;
+    right: 4%;
+    top: 15%;
+    height:60%;
+    width: 25%;
+    padding: 0 2px;
+    cursor: pointer;
+}
+
+/*Кнопа поиска*/
+#knopka{
+    z-index: 2;
+    position: absolute;
+    right: 0%;
+    top: 6%;
+    height: 70%;
+    width: 3%;
+    border:none;
+    background-image: url("../img/search.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
+}
+#knopka:active{
+    background-image: url("../img/search1.png");
+}
+/*Центральный блок*/
+#center{
+    z-index: 0;
+    position: absolute;
+    left: 20%;
+    top: 0%;
+    background-color: white;
+    width: 80%;
+    padding-top: 3%;
+    height: 94%;
+    overflow-y: scroll;
+    font-size:19px;
+    background-image: url("../img/19.jpg");
+}
+::-webkit-scrollbar-thumb {  
+border:none; 
+background: none;
+} 
+::-webkit-scrollbar{ 
+width: 1px;
+margin: 0;
+}
+::-webkit-scrollbar:horizontal{ 
+    height: 1px; /* 1 - горизонтальный скроллбар */
+}
+/*Подвал сайта*/
+#footer{
+    z-index: 2;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-color: grey;
+    opacity: 0.7;
+    width: 80%;
+    height: 5%;
+    box-shadow: -1px -1px 5px grey;
+    color: white;
+}
+#footer:hover{
+    opacity:0.9;
+}
+/*Вк блок*/
+#vk{
+    float: right;
+    height: 90%;
+    width: 3%;
+    display: inline-block; 
+    background-image: url("../img/vk.png");
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: contain;
+      opacity: 0.5;
+      cursor: pointer;
+}
+#vk:hover{
+     opacity: 1;
+}
+/*однклассники блок*/
+#ok{
+    float: right;
+    height: 90%;
+    width: 3%;
+    display: inline-block;
+    background-image: url("../img/ok.png");
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: contain;
+      opacity: 0.5;
+      cursor: pointer;
+}
+#ok:hover{
+     opacity: 1;
+}
+/*Фейсбук блок*/
+#fb{
+    float: right;
+    height: 90%;
+    width: 3%;
+    display: inline-block;
+    background-position: left; 
+    background-image: url("../img/fb.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+      opacity: 0.5;
+      cursor: pointer;
+}
+#fb:hover{
+     opacity: 1;
+}
+/*Сообщение администрации*/
+#mail{
+    float: left;
+    height: 90%;
+    width: 3%;
+    display: inline-block;
+    background-image: url("../img/mail.png");
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 0 5px;
+    opacity: 0.5;
+    cursor: pointer;
+}
+#mail:hover{
+     opacity: 1;
+}
+/*Доставка блок*/
+#dostavka{
+    float: left;
+    height: 90%;
+    width: 3%;
+    display: inline-block;
+    background-image: url("../img/dostavka.png");
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 0 5px;
+    opacity: 0.5;
+    cursor: pointer;
+}
+#dostavka:hover{
+     opacity: 1;
+}
+#zakazu{
+    float: left;
+    height: 90%;
+    width: 3%;
+    display: inline-block;
+    background-image: url("../img/13.png");
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 0 5px;
+    opacity: 0.5;
+    cursor: pointer;
+}
+#zakazu:hover{
+     opacity: 1;
+}
+/*Блок с контактной информацией*/
+#kontaktu{
+    float: left;
+    height: 90%;
+    width: 3%;
+    display: inline-block;
+    background-image: url("../img/kontaktu.png");
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 0 5px;
+    opacity: 0.5;
+    cursor: pointer;
+}
+#kontaktu:hover{
+   opacity: 1;
+}
+#inf{
+    position: absolute;
+    bottom:0;
+    left:0;
+    width: 100%;
+    font-size: 50%;
+    text-align: left;
+    color:gray;
+    
+}
